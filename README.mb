@@ -1,0 +1,51 @@
+# Projeto de Classificação de Câncer de Mama
+
+Este é um projeto de classificação de diagnósticos de câncer de mama como malignos ou benignos. O objetivo é desenvolver um modelo de aprendizado de máquina capaz de prever com precisão o diagnóstico com base em características dos núcleos celulares.
+
+## Conjunto de Dados
+
+O conjunto de dados utilizado neste projeto é o "Breast Cancer Wisconsin (Diagnostic) Dataset". Ele contém informações sobre características de núcleos celulares em amostras de tecido mamário, que são usadas para identificação de diagnósticos de câncer. O conjunto de dados possui um total de 569 instâncias e 30 características.
+
+## Pré-processamento dos Dados
+
+- Importação de bibliotecas: Pandas, NumPy, Matplotlib, Scikit-Learn.
+- Carregamento dos dados a partir do arquivo "wdbc.data".
+- Análise exploratória dos dados, incluindo estatísticas descritivas, gráficos de barras e visualizações de dispersão.
+
+## Modelagem
+
+- Separação dos atributos das classes (alvo) para modelagem.
+- Conversão das classes (Maligno e Benigno) em rótulos numéricos.
+- Divisão dos dados em conjuntos de treinamento e teste.
+- Padronização das características para garantir a mesma escala.
+- Escolha do algoritmo SVM (Support Vector Machine) para classificação.
+
+## Otimização do Modelo
+
+- Utilização do GridSearchCV para explorar diferentes combinações de hiperparâmetros.
+- Seleção dos melhores hiperparâmetros: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}.
+
+## Avaliação do Modelo
+
+- Avaliação do modelo no conjunto de teste.
+- Cálculo de métricas como acurácia, matriz de confusão, curva ROC e AUC.
+
+## Conclusões
+
+- Resumo dos resultados obtidos e métricas de avaliação.
+- Discussão sobre a capacidade do modelo de distinguir entre diagnósticos malignos e benignos.
+- Sugestão de próximos passos, como coleta de mais dados, técnicas de engenharia de características e ajuste fino do modelo.
+
+## Execução do Projeto
+
+1. Instale as bibliotecas necessárias listadas no arquivo de requisitos (requirements.txt).
+2. Execute o Jupyter Notebook "Breast_Cancer_Classification.ipynb" para acompanhar o desenvolvimento do projeto.
+
+## Autor
+
+Quemoel Barros Silva
+
+## Recursos Adicionais
+
+- [Link para o Conjunto de Dados](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
+- [Documentação do Scikit-Learn](https://scikit-learn.org/stable/documentation.html)
